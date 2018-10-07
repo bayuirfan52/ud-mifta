@@ -7,7 +7,6 @@
 		function __construct()
 		{
 			include 'database.php';
-			include 'model.php';
 			include 'library.php';
 		}
 	}
