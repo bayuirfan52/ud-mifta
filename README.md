@@ -30,7 +30,7 @@ Folder View : Tampilan yang telah dibuat, silakan diletakkan di folder ini.
 Import ud_mifta.sql terlebih dahulu ke dalam database. Gunakan nama database yang sama dengan file tersebut. Selalu eksport database yang sudah dikembangkan agar sistem selalu update.
 Kode program masih kosong. Mohon kembangkan sistem utama terlebih dahulu agar program lebih dinamis.
 
-##Status Progress Program
+## Status Progress Program
 Membuat File System untuk MVC
 
 Materi bisa lihat di Youtube Channer Web Programming UNPAS mengenai MVC PHP
