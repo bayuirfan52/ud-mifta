@@ -26,10 +26,14 @@ Akses link berikut untuk mengetahui gambaran program
 ## Penjelasan Program
 Program dibagi ke dalam beberapa folder yang masing-masing seharusnya memiliki fungsi sendiri. Mohon perhatikan pembagian folder dibawah ini.
 
-Folder AJAX : Digunakan untuk menghandle live search.
+Folder AJAX : Digunakan untuk menghandle live search. 
+
 Folder Assets : Letakkan file css untuk tampilan kedalam folder css yang disediakan, dan program javascript kedalam folder js. 
+
 Folder img untuk meletakkan semua gambar yang dibutuhkan.
+
 Folder App : Terdiri dari beberapa folder khusus yang memiliki fungsi masing-masing. Program menerapkan MVC
+
 Folder View : Tampilan yang telah dibuat, silakan diletakkan di folder ini.
 
 ## Attention
