@@ -30,7 +30,7 @@ Folder AJAX : Digunakan untuk menghandle live search.
 
 Folder Assets : Letakkan file css untuk tampilan kedalam folder css yang disediakan, dan program javascript kedalam folder js. 
 
-Folder img untuk meletakkan semua gambar yang dibutuhkan.
+Folder img : untuk meletakkan semua gambar yang dibutuhkan.
 
 Folder App : Terdiri dari beberapa folder khusus yang memiliki fungsi masing-masing. Program menerapkan MVC
 
@@ -43,4 +43,4 @@ Kode program masih kosong. Mohon kembangkan sistem utama terlebih dahulu agar pr
 ## Status Progress Program
 Membuat File System untuk MVC
 
-Materi bisa lihat di Youtube Channer Web Programming UNPAS mengenai MVC PHP
+Materi bisa lihat di Youtube Channel Web Programming UNPAS mengenai MVC PHP
