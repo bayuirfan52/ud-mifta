@@ -5,7 +5,7 @@
 	public class Model
 	{
 		function __construct(){
-            include 'database.php';
+            require 'database.php';
 		}
 	}
 ?>

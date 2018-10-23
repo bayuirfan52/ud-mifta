@@ -2,16 +2,22 @@
 
 Tugas Sistem Informasi Manajemen.
 Kontributor : 
+
 Denis Darwa S
+
 Sekar Minati
+
 Nur Laila
+
 Maghfira Izzani
+
 Intan Pradina
+
 Muhammad Bayu Irfan Pratama
 
-Bahasa pemrograman : PHP (AJAX Support), Javascript (Jquery support)
+### Bahasa pemrograman : PHP (AJAX Support), Javascript (Jquery support)
 
-Database : MySQL (MariaDB)
+### Database : MySQL (MariaDB)
 
 ## UML dan DFD
 Akses link berikut untuk mengetahui gambaran program
@@ -23,7 +29,7 @@ Program dibagi ke dalam beberapa folder yang masing-masing seharusnya memiliki f
 Folder AJAX : Digunakan untuk menghandle live search.
 Folder Assets : Letakkan file css untuk tampilan kedalam folder css yang disediakan, dan program javascript kedalam folder js. 
 Folder img untuk meletakkan semua gambar yang dibutuhkan.
-Folder Config : Semua kode logic, access database maupun alih halaman silakan gunakan file yang disediakan.
+Folder App : Terdiri dari beberapa folder khusus yang memiliki fungsi masing-masing. Program menerapkan MVC
 Folder View : Tampilan yang telah dibuat, silakan diletakkan di folder ini.
 
 ## Attention

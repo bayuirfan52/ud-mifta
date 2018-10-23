@@ -2,7 +2,7 @@
 	/**
 	 * Controller File. Configure all views on the App
 	 */
-	public class Controller
+	class Controller
 	{
 		function __construct()
 		{
