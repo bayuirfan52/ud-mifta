@@ -4,10 +4,9 @@
 	 */
 	class Controller
 	{
-		function __construct()
+		public function view($view, $data = [])
 		{
-			include 'model.php';
-			include 'library.php';
+			require_once '../view.'.$view.".php";
 		}
 	}
 ?>

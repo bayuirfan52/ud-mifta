@@ -4,8 +4,5 @@
 	 */
 	public class Model
 	{
-		function __construct(){
-            require 'database.php';
-		}
 	}
 ?>
