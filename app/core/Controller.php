@@ -6,7 +6,13 @@
 	{
 		public function view($view, $data = [])
 		{
-			require_once '../view.'.$view.".php";
+			require_once 'app/view/'.$view.".php";
+		}
+
+		public function model($model)
+		{
+			require_once 'app/view/'.$model.".php";
+			return new $model;
 		}
 	}
 ?>
