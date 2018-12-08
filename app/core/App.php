@@ -13,8 +13,8 @@
 			$url = $this->parseURL();
 
 			//controller
-			if (file_exists('app/controllers/' . $url[0] . 'php')) {
-				$this->controllers = $url[0];
+			if (file_exists('app/controllers/' . $url[0] . '.php')) {
+				$this->controller = $url[0];
 				unset($url[0]);
 			}
 
@@ -33,7 +33,6 @@
 			if (!empty($url)) {
 				$this->params = array_values($url);
 			}
-
 			//jalankan controller dan method dan mengirimkan params jika ada
 			call_user_func_array([$this->controller, $this->method], $this->params);
 		}

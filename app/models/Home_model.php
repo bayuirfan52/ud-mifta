@@ -1,8 +1,13 @@
 <?php
 
 class Home_model extends Model{
-    public function index($data)
+    public function login($username, $password)
     {
-        # code...
+        $q = "SELECT * FROM user WHERE username = :user AND password = :pass";
+        $this->query($q);
+        $this->bind("user",$username);
+        $this->bind("pass",$password);
+        $this->execute();
+        return $this->single();
     }
 }

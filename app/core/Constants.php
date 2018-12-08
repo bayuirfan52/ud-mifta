@@ -1,6 +1,6 @@
 <?php
 
-define('BASE_URL', 'http://localhost/ud-mifta/assets/');
+define('BASE_URL', 'http://localhost/ud-mifta/');
 
 // DB
 define('DB_HOST', 'localhost');
