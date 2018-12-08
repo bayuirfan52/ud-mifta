@@ -57,7 +57,7 @@ membuat model silakan diletakkan pada folder models dengan nama seperti Example_
 		<?php>
 		class Example_model extends Model{
 			public function selectFunctionExample($params){
-				$selectExampleQuery = "SELECT * FROM yourTableName WHERE column = :valueName";
+				$selectExample = "SELECT * FROM yourTableName WHERE column = :valueName";
 				
 				$this->query($selectExample);
 				
@@ -67,9 +67,9 @@ membuat model silakan diletakkan pada folder models dengan nama seperti Example_
 			}
 
 			public function insertFunctionExample($params){
-				$selectExampleQuery = "INSERT INTO yourTableName VALUES :valueName, :valueName2";
+				$insertExample = "INSERT INTO yourTableName VALUES :valueName, :valueName2";
 				
-				$this->query($selectExample);
+				$this->query($insertExample);
 				
 				$this->bind('valueName',$params['arrayIndex']); //mengisikan nilai pada :valueName
 				
@@ -79,9 +79,9 @@ membuat model silakan diletakkan pada folder models dengan nama seperti Example_
 			}
 
 			public function deleteFunctionExample($id){
-				$selectExampleQuery = "DELETE FROM yourTableName WHERE column = :id";
+				$deleteExample = "DELETE FROM yourTableName WHERE column = :id";
 				
-				$this->query($selectExample);
+				$this->query($deleteExample);
 				
 				$this->bind('id',$id); //mengisikan nilai pada :id
 
@@ -89,11 +89,11 @@ membuat model silakan diletakkan pada folder models dengan nama seperti Example_
 			}
 
 			public function updateFunctionExample($params){
-				$selectExampleQuery = "UPDATE yourTableName SET 
+				$updateExample = "UPDATE yourTableName SET 
 										column = :valueName
 										WHERE columnId = :id";
 				
-				$this->query($selectExample);
+				$this->query(updateExample);
 				$this->bind('valueName',$params['value']); //mengisikan nilai pada :valueName
 				$this->bind('id',$params['id']); //mengisikan nilai pada :id
 
