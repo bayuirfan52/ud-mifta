@@ -39,9 +39,15 @@ membuat controller silakan diletakkan pada folder controllers dan membuat class 
 		<?php>
 		class Example extends Controller{
 			public function index(){
+				#your view or logical code here..
+				
+				$this->model('ModelName_model')->modelFunction(); //Cara memanggil model
+				
 				$this->view('templates/header');
 				$this->view('templates/menu'); //Jika ingin menggunakan dashboard menu
-				#your view or logical code here..
+				
+				$this->view('yourViewName');
+				
 				$this->view('templates/footer');
 			}
 		}
@@ -115,6 +121,6 @@ Import ud_mifta.sql terlebih dahulu ke dalam database. Gunakan nama database yan
 Kode program masih kosong. Mohon kembangkan sistem utama terlebih dahulu agar program lebih dinamis.
 
 ## Status Progress Program
-Membuat File System untuk MVC
+Membuat Views, Controller, dan Model sesuai kebutuhan.
 
 Materi bisa lihat di Youtube Channel Web Programming UNPAS mengenai MVC PHP
