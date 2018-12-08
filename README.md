@@ -33,7 +33,8 @@ Folder Assets : Letakkan file css untuk tampilan kedalam folder css yang disedia
 Folder img : untuk meletakkan semua gambar yang dibutuhkan.
 
 Folder App : Terdiri dari beberapa folder khusus yang memiliki fungsi masing-masing. Program menerapkan MVC
-	-> membuat controller silakan diletakkan pada folder controllers dan membuat class seperti contoh berikut
+	
+	membuat controller silakan diletakkan pada folder controllers dan membuat class seperti contoh berikut
 	
 		<code> 
 			<?php>
@@ -47,7 +48,7 @@ Folder App : Terdiri dari beberapa folder khusus yang memiliki fungsi masing-mas
 			}
 		</code>
 	
-	-> membuat model silakan diletakkan pada folder models dengan nama seperti Example_model (diberikan _model untuk membedakan dengan class Model pada folder core) dengan contoh sebagai berikut
+	membuat model silakan diletakkan pada folder models dengan nama seperti Example_model (diberikan _model untuk membedakan dengan class Model pada folder core) dengan contoh sebagai berikut
 
 		<code> 
 			<?php>
@@ -99,7 +100,8 @@ Folder App : Terdiri dari beberapa folder khusus yang memiliki fungsi masing-mas
 		</code>
 
 Folder View : Tampilan yang telah dibuat, silakan diletakkan di folder ini.
-	-> untuk membuat viewsnya cukup dengan
+	untuk membuat viewsnya cukup dengan
+		
 		<code>
 				<link rel="stylesheet" href=""> <!-- Jika ada tambahan file css -->
 			
