@@ -36,85 +36,79 @@ Folder App : Terdiri dari beberapa folder khusus yang memiliki fungsi masing-mas
 	
 membuat controller silakan diletakkan pada folder controllers dan membuat class seperti contoh berikut
 	
-		<code> 
-			<?php>
-			class Example extends Controller{
-				public function index(){
-					$this->view('templates/header');
-					$this->view('templates/menu'); //Jika ingin menggunakan dashboard menu
-					#your view or logical code here..
-					$this->view('templates/footer');
-				}
+		<?php>
+		class Example extends Controller{
+			public function index(){
+				$this->view('templates/header');
+				$this->view('templates/menu'); //Jika ingin menggunakan dashboard menu
+				#your view or logical code here..
+				$this->view('templates/footer');
 			}
-		</code>
+		}
 	
 membuat model silakan diletakkan pada folder models dengan nama seperti Example_model (diberikan _model untuk membedakan dengan class Model pada folder core) dengan contoh sebagai berikut
 
-		<code> 
-			<?php>
-			class Example_model extends Model{
-				public function selectFunctionExample($params){
-					$selectExampleQuery = "SELECT * FROM yourTableName WHERE column = :valueName";
-					
-					$this->query($selectExample);
-					
-					$this->bind('valueName',$params); //mengisikan nilai pada :valueName
-					
-					return $this->single(); //Kalau ingin menampilkan 1 baris nilai saja
-				}
-
-				public function insertFunctionExample($params){
-					$selectExampleQuery = "INSERT INTO yourTableName VALUES :valueName, :valueName2";
-					
-					$this->query($selectExample);
-					
-					$this->bind('valueName',$params['arrayIndex']); //mengisikan nilai pada :valueName
-					
-					$this->bind('valueName',$params['arrayIndex2']);//mengisikan nilai pada :valueName2
-
-					return $this->rowCount();
-				}
-
-				public function deleteFunctionExample($id){
-					$selectExampleQuery = "DELETE FROM yourTableName WHERE column = :id";
-					
-					$this->query($selectExample);
-					
-					$this->bind('id',$id); //mengisikan nilai pada :id
-
-					return $this->rowCount();
-				}
-
-				public function updateFunctionExample($params){
-					$selectExampleQuery = "UPDATE yourTableName SET 
-											column = :valueName
-											WHERE columnId = :id";
-					
-					$this->query($selectExample);
-					$this->bind('valueName',$params['value']); //mengisikan nilai pada :valueName
-					$this->bind('id',$params['id']); //mengisikan nilai pada :id
-
-					return $this->rowCount();
-				}
+		<?php>
+		class Example_model extends Model{
+			public function selectFunctionExample($params){
+				$selectExampleQuery = "SELECT * FROM yourTableName WHERE column = :valueName";
+				
+				$this->query($selectExample);
+				
+				$this->bind('valueName',$params); //mengisikan nilai pada :valueName
+				
+				return $this->single(); //Kalau ingin menampilkan 1 baris nilai saja
 			}
-		</code>
+
+			public function insertFunctionExample($params){
+				$selectExampleQuery = "INSERT INTO yourTableName VALUES :valueName, :valueName2";
+				
+				$this->query($selectExample);
+				
+				$this->bind('valueName',$params['arrayIndex']); //mengisikan nilai pada :valueName
+				
+				$this->bind('valueName',$params['arrayIndex2']);//mengisikan nilai pada :valueName2
+
+				return $this->rowCount();
+			}
+
+			public function deleteFunctionExample($id){
+				$selectExampleQuery = "DELETE FROM yourTableName WHERE column = :id";
+				
+				$this->query($selectExample);
+				
+				$this->bind('id',$id); //mengisikan nilai pada :id
+
+				return $this->rowCount();
+			}
+
+			public function updateFunctionExample($params){
+				$selectExampleQuery = "UPDATE yourTableName SET 
+										column = :valueName
+										WHERE columnId = :id";
+				
+				$this->query($selectExample);
+				$this->bind('valueName',$params['value']); //mengisikan nilai pada :valueName
+				$this->bind('id',$params['id']); //mengisikan nilai pada :id
+
+				return $this->rowCount();
+			}
+		}
 
 Folder View : Tampilan yang telah dibuat, silakan diletakkan di folder ini.
 untuk membuat viewsnya cukup dengan
 		
-		<code>
-				<link rel="stylesheet" href=""> <!-- Jika ada tambahan file css -->
-			
-			</head>
-			<body>
-			
-				<!-- silakan tulis kode html atau php disini -->
-			
-			</body>
-			
-			<script src=""> <!-- Jika ada tambahan file js -->
 		
-		</code>
+			<link rel="stylesheet" href=""> <!-- Jika ada tambahan file css -->
+		
+		</head>
+		<body>
+		
+			<!-- silakan tulis kode html atau php disini -->
+		
+		</body>
+		
+		<script src=""> <!-- Jika ada tambahan file js -->
 
 ## Attention
 Import ud_mifta.sql terlebih dahulu ke dalam database. Gunakan nama database yang sama dengan file tersebut. Selalu eksport database yang sudah dikembangkan agar sistem selalu update.
